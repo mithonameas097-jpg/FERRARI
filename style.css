@@ -543,3 +543,11 @@ nav a:hover::after {
     height: 450px;
   }
 }
+footer {
+  background-color:#181818;
+  color: #fff;
+  text-align: center;
+  padding: 20px 0;
+  font-family: Arial, Helvetica, sans-serif;
+  scroll-snap-align: start;
+}
