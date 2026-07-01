@@ -1,0 +1,545 @@
+html {
+  scroll-behavior: smooth;
+  scroll-snap-type: y mandatory;
+}
+body {
+  background:
+    linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.85)),
+    url(https://i.ibb.co/kVKb89wR/e1ed1208a3c4e968ba026bdae0e917f0.jpg);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  overflow-x: hidden;
+  margin: 0;
+}
+header {
+  font-family: "Orbitron", sans-serif;
+  position: sticky;
+  top: 0;
+  padding: 0.2%;
+  width: 100%;
+  background-color: #ffffff05;
+  backdrop-filter: blur(10px);
+  z-index: 100;
+  transition: 0.6s ease-in-out;
+  color: white;
+}
+header:hover{
+  background-color: black;
+}
+#video-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 105%;
+  height: 130%;
+  object-fit: cover;
+  z-index: -1;
+}
+a {
+  text-decoration: none;
+}
+header {
+  position: sticky;
+  top: 0;
+  padding: 0.2%;
+  width: 105%;
+  background-color: #ffffff05;
+  backdrop-filter: blur(10px);
+  z-index: 100;
+}
+nav {
+  width: 100%;
+  text-align: center;
+}
+nav a {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0 15px;
+  color: white;
+  text-decoration: none;
+  transition: 0.3s;
+  position: relative;
+}
+nav a:hover {
+  color: red;
+}
+nav a::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: -5px;
+  width: 0%;
+  height: 2px;
+  background: red;
+  transform: translateX(-50%);
+  transition: width 0.3s;
+}
+nav a:hover::after {
+  width: 100%;
+}
+.hero {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  scroll-snap-align: start;
+}
+.hero h1 {
+  color: white;
+  font-family: "Orbitron", sans-serif;
+  font-size: clamp(4rem, 15vw, 18rem);
+  margin: 0;
+  text-shadow:
+    0 0 10px #ff0000,
+    0 0 30px #ff0000,
+    0 0 60px #ff0000;
+}
+.main {
+  margin: 0;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Arial, Helvetica, sans-serif;
+  scroll-snap-align: start;
+}
+.container {
+  width: min(95%, 1200px);
+  display: flex;
+  gap: 20px;
+  align-items: stretch;
+  justify-content: center;
+}
+.container li {
+  position: relative;
+  list-style: none;
+  overflow: hidden;
+  flex: 1 1 260px;
+  height: 520px;
+  border-radius: 12px;
+  cursor: pointer;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.6);
+  transition:
+    flex 0.5s ease,
+    transform 0.4s ease,
+    box-shadow 0.3s ease;
+}
+.container li img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.container li .content {
+  position: absolute;
+  inset: 0;
+  padding: 15px;
+  color: white;
+  background: linear-gradient(
+    to top,
+    rgba(0, 0, 0, 0.8) 20%,
+    rgba(0, 0, 0, 0.1) 70%
+  );
+  opacity: 0;
+  transition: opacity 0.4s ease;
+}
+.container span {
+  position: absolute;
+  left: 50%;
+  bottom: 15px;
+  transform: translateX(-50%);
+  width: 85%;
+  text-align: center;
+}
+.container h2 {
+  font-size: 20px;
+  margin: 0 0 8px;
+}
+.container p {
+  font-size: 14px;
+  color: #ddd;
+}
+.container li:hover {
+  flex: 1.5 1 260px;
+  transform: scale(1.08);
+  z-index: 10;
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.85);
+}
+.container li:hover .content {
+  opacity: 1;
+}
+.carousel-section {
+  min-height: 100vh;
+  width: 100%;
+  scroll-snap-align: start;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.carousel {
+  position: relative;
+  width: 90%;
+  height: 80vh;
+  overflow: hidden;
+  border-radius: 20px;
+  backdrop-filter: blur(5px);
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.7);
+}
+
+.slides {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  overflow-x: auto;
+  overflow-y: hidden;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+  scrollbar-width: none;
+}
+
+.slides::-webkit-scrollbar {
+  display: none;
+}
+.carousel-progress {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  background: rgba(255, 255, 255, 0.2);
+  z-index: 10;
+}
+
+.carousel-progress .bar {
+  height: 100%;
+  width: 100%;
+  background: red;
+  transform-origin: left;
+  transform: scaleX(0);
+}
+.slide {
+  min-width: 100%;
+  height: 100%;
+  position: relative;
+  scroll-snap-align: center;
+  flex-shrink: 0;
+}
+
+.slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.slide::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to top,
+    rgba(0, 0, 0, 0.95),
+    rgba(0, 0, 0, 0.2),
+    transparent
+  );
+}
+
+.slide-content {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  z-index: 5;
+  padding: 50px;
+  width: calc(100% - 100px);
+  color: white;
+}
+
+.slide-content h1 {
+  font-size: 4rem;
+  margin-bottom: 20px;
+}
+
+.slide-content p {
+  font-size: 1.2rem;
+  line-height: 1.8;
+  color: #ddd;
+  max-width: 900px;
+}
+
+.carousel-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 60px;
+  height: 60px;
+  border: none;
+  border-radius: 50%;
+  background: rgba(0, 0, 0, 0.6);
+  color: white;
+  font-size: 22px;
+  cursor: pointer;
+  z-index: 999;
+  transition: 0.3s;
+}
+
+.carousel-btn:hover {
+  background: red;
+  transform: translateY(-50%) scale(1.1);
+}
+
+.prev {
+  left: 20px;
+}
+
+.next {
+  right: 20px;
+}
+.car-buttons {
+  display: flex;
+  gap: 15px;
+  margin-top: 20px;
+}
+.info-btn,
+.preorder-btn {
+  width: 200px;
+  height: 55px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+
+  border-radius: 8px;
+  cursor: pointer;
+
+  font-size: 16px;
+  font-weight: bold;
+  text-decoration: none;
+
+  transition: 0.3s;
+}
+
+.info-btn {
+  background: red;
+  color: white;
+}
+
+.preorder-btn {
+  background: rgba(255, 255, 255, 0.15);
+  color: white;
+  border: 1px solid rgba(255, 255, 255, 0.4);
+}
+
+.info-btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 0 20px rgba(255, 0, 0, 0.7);
+}
+
+.preorder-btn:hover {
+  background: white;
+  color: black;
+  transform: translateY(-3px);
+}
+@media (max-width: 600px) {
+  .carousel {
+    width: 95%;
+    height: 75vh;
+  }
+  .car-buttons {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .info-btn,
+  .preorder-btn {
+    width: 100%;
+  }
+  .slide-content {
+    padding: 25px;
+    width: calc(100% - 50px);
+  }
+
+  .slide-content h1 {
+    font-size: 2rem;
+    font-family: "Orbitron", sans-serif;
+  }
+
+  .slide-content p {
+    font-size: 1rem;
+    line-height: 1.6;
+  }
+
+  .carousel-btn {
+    width: 45px;
+    height: 45px;
+    font-size: 18px;
+  }
+}
+
+@media (min-width: 601px) and (max-width: 1024px) {
+  .carousel {
+    width: 95%;
+    height: 78vh;
+  }
+
+  .slide-content h1 {
+    font-size: 3rem;
+  }
+
+  .slide-content p {
+    font-size: 1.1rem;
+  }
+}
+
+@media (min-width: 1025px) {
+  .carousel {
+    width: 90%;
+    height: 80vh;
+  }
+
+  .slide-content h1 {
+    font-size: 4rem;
+  }
+}
+.car-info {
+  flex: 1;
+  color: white;
+}
+.car-info h1 {
+  font-size: 4rem;
+  margin-bottom: 20px;
+}
+.car-info p {
+  font-size: 1.2rem;
+  line-height: 1.8;
+  color: #ddd;
+}
+.intro {
+  position: fixed;
+  inset: 0;
+  background: url("https://i.ibb.co/gH09phn/Chat-GPT-Image-Jun-21-2026-06-31-17-PM.png");
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+  animation: fadeOut 2s ease 1.5s forwards;
+  text-shadow:
+    0 0 10px #ff0000,
+    0 0 30px #ff0000,
+    0 0 60px #ff0000;
+}
+.intro h1 {
+  color: white;
+  font-size: clamp(4rem, 15vw, 18rem);
+  letter-spacing: 10px;
+  font-family: "Orbitron", sans-serif;
+}
+.socials {
+  margin-top: 20px;
+  display: flex;
+  gap: 15px;
+}
+.socials i {
+  width: 35px;
+  height: 35px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid red;
+  border-radius: 50%;
+  color: red;
+  cursor: pointer;
+}
+.credits {
+  width: 100%;
+  height: 10%;
+  background-color: gray;
+  justify-content: space-between;
+  align-items: center;
+}
+@keyframes fadeOut {
+  to {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    transform: scale(1.05);
+  }
+}
+@media (max-width: 600px) {
+  .container {
+    flex-direction: column;
+    width: 95%;
+  }
+  .container li {
+    height: 320px;
+    flex: none;
+  }
+  .container li:hover {
+    transform: scale(1.03);
+    flex: none;
+  }
+  .cars {
+    width: 95%;
+    gap: 60px;
+  }
+  .car-card,
+  .car-card.reverse {
+    flex-direction: column;
+    gap: 25px;
+  }
+  .car-image img {
+    height: 250px;
+  }
+  .car-info h1 {
+    font-size: 2rem;
+  }
+  .car-info p {
+    font-size: 1rem;
+    line-height: 1.6;
+  }
+}
+@media (min-width: 601px) and (max-width: 1024px) {
+  .container li {
+    flex: 1 1 45%;
+    height: 450px;
+  }
+  .container li:hover {
+    flex: 1.5 1 45%;
+    transform: scale(1.06);
+  }
+  .cars {
+    width: 95%;
+    gap: 80px;
+  }
+  .car-card,
+  .car-card.reverse {
+    gap: 30px;
+  }
+  .car-info h1 {
+    font-size: 2.8rem;
+  }
+  .car-info p {
+    font-size: 1.1rem;
+  }
+  .car-image img {
+    height: 350px;
+  }
+}
+@media (min-width: 1025px) {
+  .container li {
+    flex: 1 1 260px;
+    height: 520px;
+  }
+  .container li:hover {
+    flex: 1.5 1 260px;
+    transform: scale(1.08);
+  }
+  .car-info h1 {
+    font-size: 4rem;
+  }
+  .car-image img {
+    height: 450px;
+  }
+}
