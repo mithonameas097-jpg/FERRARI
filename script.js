@@ -7,7 +7,7 @@ $(function () {
   let index = 0;
   let timer;
 
-  const duration = 10000;
+  const duration = 5000;
   const $bar = $(".bar");
 
   function animateBar() {
@@ -19,7 +19,7 @@ $(function () {
       {
         duration: duration,
         step: function (now, fx) {
-          let progress = fx.pos; // 0 → 1
+          let progress = fx.pos;
           $bar.css("transform", `scaleX(${progress})`);
         },
       }
