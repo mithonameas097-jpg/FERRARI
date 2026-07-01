@@ -551,3 +551,8 @@ footer {
   font-family: Arial, Helvetica, sans-serif;
   scroll-snap-align: start;
 }
+.footer-content {
+  display: flex;
+  margin-left: 5%;
+  gap: 30px;
+}
