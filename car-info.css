@@ -122,5 +122,22 @@ h3 {
   padding: 4%;
 }
 header:hover{
+  background-color: #181818;
+}
+footer {
+  background-color:#181818;
+  color: #fff;
+  text-align: center;
+  padding: 20px 0;
+  font-family: Arial, Helvetica, sans-serif;
+  scroll-snap-align: start;
+  transition: 0.6s ease-in-out;
+}
+.footer-content {
+  display: flex;
+  margin-left: 5%;
+  gap: 30px;
+}
+footer:hover{
   background-color: black;
 }
