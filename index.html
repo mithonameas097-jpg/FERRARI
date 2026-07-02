@@ -1,320 +1,231 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&display=swap"
-      rel="stylesheet"
-    />
-    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
-    <script src="script.js"></script>
-    <title>Document</title>
-  </head>
 
-  <body>
-    <video id="video-background" autoplay muted loop>
-      <source
-        src="https://res.cloudinary.com/q3uhrnpn/video/upload/v1782810473/ferrarione_qesygt.mp4"
-        type="video/mp4"
-      />
-    </video>
-    <header style="z-index: 11">
-      <div
-        style="
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&display=swap" rel="stylesheet" />
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <script src="script.js"></script>
+  <title>Document</title>
+</head>
+
+<body>
+  <video id="video-background" autoplay muted loop>
+    <source src="https://res.cloudinary.com/q3uhrnpn/video/upload/v1782810473/ferrarione_qesygt.mp4" type="video/mp4" />
+  </video>
+  <header style="z-index: 11">
+    <div style="
           display: flex;
           flex-direction: row;
           align-items: center;
           justify-content: space-between;
-        "
-      >
-        <div style="display: flex; flex-direction: row">
-          <h1
-            style="
+        ">
+      <div style="display: flex; flex-direction: row">
+        <h1 style="
               color: white;
               font-family: &quot;Times New Roman&quot;, Times, serif;
               padding-left: 30%;
-            "
-          >
-            FERRARI
-          </h1>
-        </div>
-        <div>
-          <nav style="color: white">
-            <a href="index.html">HOME</a>
-            <a href="about.html">ABOUT</a>
-            <a href="contact.html">CONTACT</a>
-          </nav>
-        </div>
-        <div>
-          <img
-            src="https://i.ibb.co/bgFWjvyc/Screenshot-2026-06-22-105413.png"
-            style="height: 70px; border-radius: 3px; padding-right: 100px"
-          />
-        </div>
+            ">
+          FERRARI
+        </h1>
       </div>
-    </header>
-    <div class="intro">
-      <h1>FERRARI</h1>
-    </div>
-    <section class="hero">
-      <h1>FERRARI</h1>
-    </section>
-    <section class="carousel-section">
-      <div class="carousel">
-        <div class="carousel-progress">
-          <div class="bar"></div>
-        </div>
-        <button class="carousel-btn prev">
-          <i class="fa-solid fa-chevron-left"></i>
-        </button>
-
-        <div class="slides">
-          <div class="slide">
-            <img src="https://i.ibb.co/zTL70yPf/ferrari-849-testarossa.jpg" />
-            <div class="slide-content">
-              <h1 style="color: red">Ferrari 849 Testarossa</h1>
-              <div class="car-buttons">
-                <a href="849Testarossa.html" class="info-btn">See Car Info</a>
-                <a href="contact.html" class="preorder-btn">Preorder</a>
-              </div>
-            </div>
-          </div>
-
-          <div class="slide">
-            <img src="https://i.ibb.co/RGzL0GnF/296-GTB-ed-1.jpg" />
-            <div class="slide-content">
-              <h1 style="color: red">Ferrari 296 GTB</h1>
-              <div class="car-buttons">
-                <a href="296gbt.html" class="info-btn">See Car Info</a>
-                <a href="contact.html" class="preorder-btn">Preorder</a>
-              </div>
-            </div>
-          </div>
-
-          <div class="slide">
-            <img src="https://i.ibb.co/JjsqBXJP/La-Ferrari-White.jpg" />
-            <div class="slide-content">
-              <h1>LaFerrari</h1>
-
-              <div class="car-buttons">
-                <a href="LaFerrari.html" class="info-btn">See Car Info</a>
-                <a href="contact.html" class="preorder-btn">Preorder</a>
-              </div>
-            </div>
-          </div>
-
-          <div class="slide">
-            <img src="https://i.ibb.co/bpk5wmr/Fonza-SP1.webp" />
-            <div class="slide-content">
-              <h1>Monza SP1</h1>
-
-              <div class="car-buttons">
-                <a href="contact.html" class="info-btn">See Car Info</a>
-                <a href="contact.html" class="preorder-btn">Preorder</a>
-              </div>
-            </div>
-          </div>
-
-          <div class="slide">
-            <img src="https://i.ibb.co/6MpR0Nb/daytona-sp3.jpg" />
-            <div class="slide-content">
-              <h1 style="color: red">Daytona SP3</h1>
-              <p>Icona-series hypercar inspired by Ferrari racing legends.</p>
-              <div class="car-buttons">
-                <a href="contact.html" class="info-btn">See Car Info</a>
-                <a href="contact.html" class="preorder-btn">Preorder</a>
-              </div>
-            </div>
-          </div>
-
-          <div class="slide">
-            <img src="https://i.ibb.co/2xxmcpZ/spider.avif" />
-            <div class="slide-content">
-              <h1 style="color: #697970">12Cilindri Spider</h1>
-
-              <div class="car-buttons">
-                <a href="contact.html" class="info-btn">See Car Info</a>
-                <a href="contact.html" class="preorder-btn">Preorder</a>
-              </div>
-            </div>
-          </div>
-
-          <div class="slide">
-            <img src="https://i.ibb.co/VWhZffXq/purosangue.avif" />
-            <div class="slide-content">
-              <h1 style="color: red">Purosangue</h1>
-
-              <div class="car-buttons">
-                <button class="info-btn">See Car Info</button>
-                <button class="preorder-btn">Preorder</button>
-              </div>
-            </div>
-          </div>
-
-          <div class="slide">
-            <img src="https://i.ibb.co/9mP53F0F/296-speciale.jpg" />
-            <div class="slide-content">
-              <h1 style="color: red">296 Speciale</h1>
-
-              <div class="car-buttons">
-                <a href="contact.html" class="info-btn">See Car Info</a>
-                <a href="contact.html" class="preorder-btn">Preorder</a>
-              </div>
-            </div>
-          </div>
-
-          <div class="slide">
-            <img
-              src="https://i.ibb.co/TBXjP3B4/Screenshot-2026-06-22-144207.png"
-            />
-            <div class="slide-content">
-              <h1 style="color: #fdd42e">SF90 XX Stradale</h1>
-
-              <div class="car-buttons">
-                <a href="contact.html" class="info-btn">See Car Info</a>
-                <a href="contact.html" class="preorder-btn">Preorder</a>
-              </div>
-            </div>
-          </div>
-
-          <div class="slide">
-            <img src="https://i.ibb.co/ynxHzfhX/xxspider.jpg" />
-            <div class="slide-content">
-              <h1 style="color: #0478fb">SF90 Spider</h1>
-              <p>Convertible hybrid supercar with 1000 horsepower.</p>
-              <div class="car-buttons">
-                <a href="contact.html" class="info-btn">See Car Info</a>
-                <a href="contact.html" class="preorder-btn">Preorder</a>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <button class="carousel-btn next">
-          <i class="fa-solid fa-chevron-right"></i>
-        </button>
-      </div>
-    </section>
-    <footer>
-      <div class="footer-content" style="display: flex; flex-direction: row">
-        <p style="font-weight: bold">Vehicles</p>
-        <p style="margin-left: 10%; font-weight: bold">About</p>
-        <a
-          href="contact.html"
-          style="
-            margin-block: 1.1%;
-            color: white;
-            text-decoration: underline;
-            margin-left: 10%;
-          "
-          >Contact US</a
-        >
-        <div
-          style="
-            display: flex;
-            flex-direction: row;
-            margin-left: 45%;
-            margin-top: 1%;
-          "
-        >
-          <a href="https://www.instagram.com/ferrari/" style="font-size: 24px"
-            ><i class="fa-brands fa-instagram" style="color: White"></i
-          ></a>
-          <a
-            href="https://www.facebook.com/Ferrari"
-            style="font-size: 24px; margin-left: 50%"
-            ><i class="fa-brands fa-facebook" style="color: White"></i
-          ></a>
-          <a
-            href="https://twitter.com/Ferrari"
-            style="font-size: 24px; margin-left: 50%"
-            ><i class="fa-brands fa-twitter" style="color: White"></i
-          ></a>
-        </div>
-      </div>
-      <div style="display: flex; flex-direction: row; margin-top: 0.9%">
-        <a
-          href="#"
-          style="
-            margin-left: 3.4%;
-            color: #dc143c;
-            text-decoration: none;
-            margin-block: 1%;
-          "
-          >849 Testarossa</a
-        >
-        <p style="margin-left: 9.4%">Introduction</p>
-      </div>
-      <div style="display: flex; flex-direction: row">
-        <a
-          href="296gbt.html"
-          style="
-            margin-left: 5%;
-            color: #dc143c;
-            text-decoration: none;
-            margin-block: 1%;
-          "
-          >296 GTB</a
-        >
-        <p style="margin-left: 10.4%">Technology</p>
-      </div>
-      <div style="display: flex; flex-direction: row">
-        <a
-          href=""
-          style="
-            margin-left: 5%;
-            color: #dc143c;
-            text-decoration: none;
-            margin-block: 1%;
-          "
-          >LaFerrari</a
-        >
-        <p style="margin-left: 10.3%">Ferrari Life</p>
-      </div>
-      <div style="display: flex; flex-direction: row">
-        <a
-          href=""
-          style="
-            margin-left: 4.5%;
-            color: #dc143c;
-            text-decoration: none;
-            margin-block: 1%;
-          "
-          >Monza SP1</a
-        >
-        <p style="margin-left: 7.5%">Configure your Ferrari</p>
-      </div>
-      <div style="display: flex; flex-direction: row">
-        <a
-          href=""
-          style="
-            margin-left: 4%;
-            color: #dc143c;
-            text-decoration: none;
-            margin-block: 1%;
-          "
-          >Daytona SP3</a
-        >
-        <p style="margin-left: 10.5%">Interior</p>
-      </div>
-      <hr
-        style="
-          margin-top: 1%;
-          margin-bottom: 1%;
-          margin-left: 3%;
-          margin-right: 3%;
-          border-color: grey;
-        "
-      />
       <div>
-        <p>&copy; 2026 Ferrari. All rights reserved.</p>
+        <nav style="color: white">
+          <a href="index.html">HOME</a>
+          <a href="about.html">ABOUT</a>
+          <a href="contact.html">CONTACT</a>
+        </nav>
       </div>
-    </footer>
-  </body>
+      <div>
+        <img src="https://i.ibb.co/bgFWjvyc/Screenshot-2026-06-22-105413.png"
+          style="height: 70px; border-radius: 3px; padding-right: 100px" />
+      </div>
+    </div>
+  </header>
+  <div class="intro">
+    <h1>FERRARI</h1>
+  </div>
+  <section class="hero">
+    <h1>FERRARI</h1>
+  </section>
+  <section class="carousel-section">
+    <div class="carousel">
+      <div class="carousel-progress">
+        <div class="bar"></div>
+      </div>
+      <button class="carousel-btn prev">
+        <i class="fa-solid fa-chevron-left"></i>
+      </button>
+
+      <div class="slides">
+        <div class="slide">
+          <img src="https://i.ibb.co/zTL70yPf/ferrari-849-testarossa.jpg" />
+          <div class="slide-content">
+            <h1 style="color: red">Ferrari 849 Testarossa</h1>
+            <div class="car-buttons">
+              <a href="849Testarossa.html" class="info-btn">See Car Info</a>
+              <a href="contact.html" class="preorder-btn">Preorder</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="slide">
+          <img src="https://i.ibb.co/RGzL0GnF/296-GTB-ed-1.jpg" />
+          <div class="slide-content">
+            <h1 style="color: red">Ferrari 296 GTB</h1>
+            <div class="car-buttons">
+              <a href="296gbt.html" class="info-btn">See Car Info</a>
+              <a href="contact.html" class="preorder-btn">Preorder</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="slide">
+          <img src="https://i.ibb.co/JjsqBXJP/La-Ferrari-White.jpg" />
+          <div class="slide-content">
+            <h1>LaFerrari</h1>
+
+              <div class="car-buttons">
+                <a href="contact.html" class="info-btn">See Car Info</a>
+                <a href="contact.html" class="preorder-btn">Preorder</a>
+              </div>
+            </div>
+          </div>
+
+        <div class="slide">
+          <img src="https://i.ibb.co/bpk5wmr/Fonza-SP1.webp" />
+          <div class="slide-content">
+            <h1>Monza SP1</h1>
+
+            <div class="car-buttons">
+              <a href="contact.html" class="info-btn">See Car Info</a>
+              <a href="contact.html" class="preorder-btn">Preorder</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="slide">
+          <img src="https://i.ibb.co/6MpR0Nb/daytona-sp3.jpg" />
+          <div class="slide-content">
+            <h1 style="color: red">Daytona SP3</h1>
+            <p>Icona-series hypercar inspired by Ferrari racing legends.</p>
+            <div class="car-buttons">
+              <a href="contact.html" class="info-btn">See Car Info</a>
+              <a href="contact.html" class="preorder-btn">Preorder</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="slide">
+          <img src="https://i.ibb.co/2xxmcpZ/spider.avif" />
+          <div class="slide-content">
+            <h1 style="color: #697970">12Cilindri Spider</h1>
+
+            <div class="car-buttons">
+              <a href="12Cilindri_Spider.html" class="info-btn">See Car Info</a>
+              <a href="contact.html" class="preorder-btn">Preorder</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="slide">
+          <img src="https://i.ibb.co/VWhZffXq/purosangue.avif" />
+          <div class="slide-content">
+            <h1 style="color: red">Purosangue</h1>
+
+            <div class="car-buttons">
+              <button class="info-btn">See Car Info</button>
+              <button class="preorder-btn">Preorder</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="slide">
+          <img src="https://i.ibb.co/9mP53F0F/296-speciale.jpg" />
+          <div class="slide-content">
+            <h1 style="color: red">296 Speciale</h1>
+
+            <div class="car-buttons">
+              <a href="contact.html" class="info-btn">See Car Info</a>
+              <a href="contact.html" class="preorder-btn">Preorder</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="slide">
+          <img src="https://i.ibb.co/TBXjP3B4/Screenshot-2026-06-22-144207.png" />
+          <div class="slide-content">
+            <h1 style="color: #fdd42e">SF90 XX Stradale</h1>
+
+            <div class="car-buttons">
+              <a href="contact.html" class="info-btn">See Car Info</a>
+              <a href="contact.html" class="preorder-btn">Preorder</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="slide">
+          <img src="https://i.ibb.co/ynxHzfhX/xxspider.jpg" />
+          <div class="slide-content">
+            <h1 style="color: #0478fb">SF90 Spider</h1>
+            <p>Convertible hybrid supercar with 1000 horsepower.</p>
+            <div class="car-buttons">
+              <a href="contact.html" class="info-btn">See Car Info</a>
+              <a href="contact.html" class="preorder-btn">Preorder</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <button class="carousel-btn next">
+        <i class="fa-solid fa-chevron-right"></i>
+      </button>
+    </div>
+  </section>
+  <footer>
+    <div class="footer-content" style="display: flex; flex-direction: row;">
+      <p style=" font-weight: bold;"> Vehicles</p>
+      <p style="margin-left: 10%; font-weight: bold;"> About</p>
+      <a href="contact.html"
+        style="margin-block: 1.1%; color: white; text-decoration: underline; margin-left: 10%;">Contact US</a>
+      <div style="display: flex; flex-direction: row; margin-left: 45%; margin-top: 1%;">
+        <a href="https://www.instagram.com/ferrari/" style="font-size: 24px;"><i class="fa-brands fa-instagram"
+            style="color: White;"></i></a>
+        <a href="https://www.facebook.com/Ferrari" style="font-size: 24px; margin-left: 50%;"><i
+            class="fa-brands fa-facebook" style="color: White;"></i></a>
+        <a href="https://twitter.com/Ferrari" style="font-size: 24px; margin-left: 50%;"><i class="fa-brands fa-twitter"
+            style="color: White;"></i></a>
+      </div>
+    </div>
+    <div style="display: flex; flex-direction: row; margin-top: 0.9%;">
+      <a href="#" style="margin-left: 3.4%; color: #DC143C; text-decoration: none; margin-block: 1%;">849 Testarossa</a>
+      <p style="margin-left: 9.4%;">Introduction</p>
+    </div>
+    <div style="display: flex; flex-direction: row;">
+      <a href="296gbt.html" style="margin-left: 5%; color: #DC143C; text-decoration: none; margin-block: 1%;">296
+        GTB</a>
+      <p style="margin-left: 10.4%;">Technology</p>
+    </div>
+    <div style="display: flex; flex-direction: row;">
+      <a href="" style="margin-left: 5%; color: #DC143C; text-decoration: none; margin-block: 1%;">LaFerrari</a>
+      <p style="margin-left: 10.3%;">Ferrari Life</p>
+    </div>
+    <div style="display: flex; flex-direction: row;">
+      <a href="" style="margin-left: 4.5%; color: #DC143C; text-decoration: none; margin-block: 1%;">Monza SP1</a>
+      <p style="margin-left: 7.5%;">Configure your Ferrari</p>
+    </div>
+    <div style="display: flex; flex-direction: row;">
+      <a href="" style="margin-left: 4%; color: #DC143C; text-decoration: none; margin-block: 1%;">Daytona SP3</a>
+      <p style="margin-left: 10.5%;">Interior</p>
+    </div>
+    <hr style="margin-top: 1%; margin-bottom: 1%; margin-left: 3%; margin-right: 3%; border-color: grey;" />
+    <div>
+      <p>&copy; 2026 Ferrari. All rights reserved.</p>
+    </div>
+  </footer>
+</body>
+
 </html>
