@@ -303,7 +303,7 @@ nav a:hover::after {
 .preorder-btn {
   width: 200px;
   height: 55px;
-
+  font-family: "Orbitron", sans-serif;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -320,19 +320,19 @@ nav a:hover::after {
 }
 
 .info-btn {
-  background: red;
+  background: gray;
   color: white;
 }
 
 .preorder-btn {
-  background: rgba(255, 255, 255, 0.15);
+  background: gray;
   color: white;
   border: 1px solid rgba(255, 255, 255, 0.4);
 }
 
 .info-btn:hover {
   transform: translateY(-3px);
-  box-shadow: 0 0 20px rgba(255, 0, 0, 0.7);
+  box-shadow: 0 0 20px rgba(67, 61, 61, 0.7);
 }
 
 .preorder-btn:hover {
@@ -559,4 +559,7 @@ footer {
 }
 footer:hover{
   background-color: black;
+}
+.label{
+  font-family: "Teko", sans-serif;
 }
