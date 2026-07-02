@@ -24,7 +24,7 @@ header {
   transition: 0.6s ease-in-out;
   color: white;
 }
-header:hover{
+header:hover {
   background-color: #181818;
 }
 #video-background {
@@ -408,7 +408,7 @@ nav a:hover::after {
   }
 }
 footer {
-  background-color:#181818;
+  background-color: #181818;
   color: #fff;
   text-align: center;
   padding: 20px 0;
@@ -421,210 +421,207 @@ footer {
   margin-left: 5%;
   gap: 30px;
 }
-footer:hover{
+footer:hover {
   background-color: black;
 }
-.label{
+.label {
   font-family: "Teko", sans-serif;
 }
 @media screen and (max-width: 600px) {
-
-  header{
-    width:100%;
-    padding:12px 0;
+  header {
+    width: 100%;
+    padding: 12px 0;
   }
 
-  nav{
-    display:flex;
-    flex-wrap:wrap;
-    justify-content:center;
-    gap:12px;
+  nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 12px;
   }
 
-  nav a{
-    margin:0;
-    font-size:14px;
+  nav a {
+    margin: 0;
+    font-size: 14px;
   }
 
-  #video-background{
-    width:100%;
-    height:100%;
+  #video-background {
+    width: 100%;
+    height: 100%;
   }
 
-  .hero h1{
-    font-size:clamp(2.8rem,18vw,5rem);
-    text-align:center;
+  .hero h1 {
+    font-size: clamp(2.8rem, 18vw, 5rem);
+    text-align: center;
   }
 
-  .container{
-    flex-direction:column;
-    width:92%;
-    gap:18px;
+  .container {
+    flex-direction: column;
+    width: 92%;
+    gap: 18px;
   }
 
-  .container li{
-    width:100%;
-    height:280px;
-    flex:none;
+  .container li {
+    width: 100%;
+    height: 280px;
+    flex: none;
   }
 
-  .container li:hover{
-    transform:scale(1.02);
-    flex:none;
+  .container li:hover {
+    transform: scale(1.02);
+    flex: none;
   }
 
-  .container h2{
-    font-size:22px;
+  .container h2 {
+    font-size: 22px;
   }
 
-  .container p{
-    font-size:15px;
+  .container p {
+    font-size: 15px;
   }
 
-  .carousel{
-    width:95%;
-    height:70vh;
+  .carousel {
+    width: 95%;
+    height: 70vh;
   }
 
-  .slide-content{
-    padding:25px;
-    width:auto;
+  .slide-content {
+    padding: 25px;
+    width: auto;
   }
 
-  .slide-content h1{
-    font-size:2rem;
+  .slide-content h1 {
+    font-size: 2rem;
   }
 
-  .slide-content p{
-    font-size:0.95rem;
-    line-height:1.6;
+  .slide-content p {
+    font-size: 0.95rem;
+    line-height: 1.6;
   }
 
-  .car-buttons{
-    flex-direction:column;
-    width:100%;
-    gap:12px;
+  .car-buttons {
+    flex-direction: column;
+    width: 100%;
+    gap: 12px;
   }
 
   .info-btn,
-  .preorder-btn{
-    width:100%;
-    height:50px;
+  .preorder-btn {
+    width: 100%;
+    height: 50px;
   }
 
-  .carousel-btn{
-    width:45px;
-    height:45px;
-    font-size:18px;
+  .carousel-btn {
+    width: 45px;
+    height: 45px;
+    font-size: 18px;
   }
 
-  .footer-content{
-    flex-direction:column;
-    gap:25px;
-    margin:0;
-    text-align:center;
+  .footer-content {
+    flex-direction: column;
+    gap: 25px;
+    margin: 0;
+    text-align: center;
   }
 
-  .credits{
-    height:auto;
-    padding:20px;
+  .credits {
+    height: auto;
+    padding: 20px;
   }
 
-  .socials{
-    justify-content:center;
-  }
-}
-
-@media screen and (min-width:601px) and (max-width:1024px){
-
-  header{
-    width:100%;
-  }
-
-  nav{
-    display:flex;
-    justify-content:center;
-    flex-wrap:wrap;
-  }
-
-  .hero h1{
-    font-size:clamp(5rem,10vw,8rem);
-  }
-
-  .container{
-    flex-wrap:wrap;
-    justify-content:center;
-  }
-
-  .container li{
-    flex:1 1 45%;
-    height:420px;
-  }
-
-  .container li:hover{
-    flex:1.2 1 45%;
-    transform:scale(1.05);
-  }
-
-  .carousel{
-    width:95%;
-    height:75vh;
-  }
-
-  .slide-content{
-    padding:35px;
-  }
-
-  .slide-content h1{
-    font-size:3rem;
-  }
-
-  .slide-content p{
-    font-size:1.05rem;
-  }
-
-  .car-buttons{
-    flex-wrap:wrap;
-  }
-
-  .footer-content{
-    flex-wrap:wrap;
-    justify-content:center;
-    margin:0;
+  .socials {
+    justify-content: center;
   }
 }
 
-@media screen and (min-width:1025px){
-
-  header{
-    width:100%;
+@media screen and (min-width: 601px) and (max-width: 1024px) {
+  header {
+    width: 100%;
   }
 
-  .container{
-    width:min(95%,1200px);
+  nav {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
   }
 
-  .container li{
-    flex:1 1 260px;
-    height:520px;
+  .hero h1 {
+    font-size: clamp(5rem, 10vw, 8rem);
   }
 
-  .container li:hover{
-    flex:1.5 1 260px;
-    transform:scale(1.08);
+  .container {
+    flex-wrap: wrap;
+    justify-content: center;
   }
 
-  .carousel{
-    width:90%;
-    height:80vh;
+  .container li {
+    flex: 1 1 45%;
+    height: 420px;
   }
 
-  .slide-content h1{
-    font-size:4rem;
+  .container li:hover {
+    flex: 1.2 1 45%;
+    transform: scale(1.05);
   }
 
-  .footer-content{
-    justify-content:space-between;
-    margin:0 5%;
+  .carousel {
+    width: 95%;
+    height: 75vh;
+  }
+
+  .slide-content {
+    padding: 35px;
+  }
+
+  .slide-content h1 {
+    font-size: 3rem;
+  }
+
+  .slide-content p {
+    font-size: 1.05rem;
+  }
+
+  .car-buttons {
+    flex-wrap: wrap;
+  }
+
+  .footer-content {
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0;
+  }
+}
+
+@media screen and (min-width: 1025px) {
+  header {
+    width: 100%;
+  }
+
+  .container {
+    width: min(95%, 1200px);
+  }
+
+  .container li {
+    flex: 1 1 260px;
+    height: 520px;
+  }
+
+  .container li:hover {
+    flex: 1.5 1 260px;
+    transform: scale(1.08);
+  }
+
+  .carousel {
+    width: 90%;
+    height: 80vh;
+  }
+
+  .slide-content h1 {
+    font-size: 4rem;
+  }
+
+  .footer-content {
+    justify-content: space-between;
+    margin: 0 5%;
   }
 }
