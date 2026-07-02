@@ -13,5 +13,5 @@ $(function () {
         }, 800);
     $("#engine").click(function(){
         $("#engine_noise")[0].play();
-    });
+    })
 });
